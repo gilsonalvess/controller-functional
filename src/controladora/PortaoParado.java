@@ -15,12 +15,7 @@ public class PortaoParado implements IPortao{
 
 	@Override
 	public void tratarBotao() {
-		// movimentar o portao quando o botao for pressionado
-		if(this.controladora.isPortaoAbrindo()) {
-			this.controladora.setPortao(new PortaoAbrindo(this.controladora));
-		}else {
-			this.controladora.setPortao(new PortaoFechando(this.controladora));
-		}
+
 		
 	}
 
